@@ -14,10 +14,6 @@
                  Title="Otaku's World - Creation"
                  Height="450" Width="800">
     <Grid>
-        <TabControl>
-            <TabItem Header="Creation">
-                
-            </TabItem>
-        </TabControl>
+        <ContentControl Content="{Binding Content}"/>
     </Grid>
 </mah:MetroWindow>
