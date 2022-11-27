@@ -1,12 +1,23 @@
-﻿<Window x:Class="Igris.OtakuWorld.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Igris.OtakuWorld"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+﻿<mah:MetroWindow x:Class="Igris.OtakuWorld.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 xmlns:local="clr-namespace:Igris.OtakuWorld"
+                 mc:Ignorable="d"
+                 WindowStartupLocation="CenterScreen"
+                 WindowTitleBrush="{DynamicResource MahApps.Brushes.ThemeBackground}"
+                 NonActiveWindowTitleBrush="{DynamicResource MahApps.Brushes.ThemeBackground}"
+                 GlowBrush="{DynamicResource MahApps.Brushes.AccentBase}"
+                 TitleCharacterCasing="Normal"
+                 Title="Otaku's World - Creation"
+                 Height="450" Width="800">
     <Grid>
-
+        <TabControl>
+            <TabItem Header="Creation">
+                
+            </TabItem>
+        </TabControl>
     </Grid>
-</Window>
+</mah:MetroWindow>
