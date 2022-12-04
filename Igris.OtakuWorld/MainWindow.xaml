@@ -13,7 +13,19 @@
                  TitleCharacterCasing="Normal"
                  Title="Otaku's World - Creation"
                  Height="450" Width="800">
+    <mah:MetroWindow.Resources>
+        <LinearGradientBrush x:Key="LinearBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="{DynamicResource MahApps.Colors.ThemeBackground}" Offset="0.0"/>
+            <GradientStop Color="{DynamicResource MahApps.Colors.AccentBase}" Offset="0.5"/>
+            <GradientStop Color="{DynamicResource MahApps.Colors.ThemeBackground}" Offset="1.0"/>
+        </LinearGradientBrush>
+    </mah:MetroWindow.Resources>
     <Grid>
-        <ContentControl Content="{Binding Content}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="HeaderBorder" Height="2" Background="{DynamicResource LinearBrush}"/>
+        <ContentControl x:Name="MainContent" Grid.Row="1" Content="{Binding Content}"/>
     </Grid>
 </mah:MetroWindow>
