@@ -12,6 +12,11 @@ namespace Igris.OtakuWorld.Creation.ViewModels
     {
         public List<Serie> Series { get; set; }
 
+        public DelegateCommand NewCommand { get; }
+        public DelegateCommand OpenCommand { get; }
+        public DelegateCommand ModifyCommand { get; }
+        public DelegateCommand DeleteCommand { get; }
+
         public SeriesViewModel()
         {
             Series = new List<Serie>
